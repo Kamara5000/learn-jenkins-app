@@ -1,0 +1,15 @@
+ stage('without docker') {
+            steps {
+               print 'without docker'
+            }
+        }
+        stage('with docker') {
+            agent{
+                docker{
+                    image 'node:18-alphine'
+                }
+            }
+            steps {
+               print 'with docker'
+            }
+        }

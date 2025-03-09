@@ -36,7 +36,7 @@ stages{
         }
             steps {
                sh '''
-                    echo "building now"
+                    echo "building project now"
                     ls -la
                     node --version
                     npm --version
